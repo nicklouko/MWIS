@@ -1,0 +1,37 @@
+.navbar{
+  background-color: #578eed; /* matches the palette, not too dark */
+  padding: 12px 0;
+  border-radius: 6px;
+}
+.navpages {
+  list-style: none;   /* removes bullets points from the list */
+  margin: 0;          /* reset default spacing around the list items*/
+  padding: 0;
+  
+  display: flex;      /* makes list items responsive and also lines the items  horizontally because default value for flex-direction is row */
+  gap: 20px;          /* space between items */
+}
+
+#homelink{
+    margin-left: 20px; /* adds margin to the left of the home link to separate it from the edge of the navbar */
+}
+
+#login {
+    margin-left:auto; /* pushes the login link to the far right */
+}
+/* Styles each link */
+.navpages a {
+  text-decoration: none; /*removes underline from links */
+  color: black;
+  padding: 8px 12px 8px 12px; /* adds padding around the text */
+  transition: background-color 0.3s, color 0.3s; /* smooth transition for background and text color changes */
+  border-radius: 4px;
+}
+
+.navpages a:hover {
+  color: lightskyblue; /* changes text color on hover */
+  
+  background-color: #222831;  /* adds background color on hover */
+ 
+
+}
