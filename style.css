@@ -20,7 +20,7 @@
     margin-left:auto; /* pushes the login link to the far right */
 }
 /* Styles each link */
-.navpages a {
+a {
   text-decoration: none; /*removes underline from links */
   color: black;
   padding: 8px 12px 8px 12px; /* adds padding around the text */
@@ -28,7 +28,7 @@
   border-radius: 4px;
 }
 
-.navpages a:hover {
+a:hover {
   color: lightskyblue; /* changes text color on hover */
   
   background-color: #222831;  /* adds background color on hover */
