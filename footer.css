@@ -1,0 +1,7 @@
+.container{
+    margin: 500px 0 0 0; 
+    display:flex;
+    justify-content: center; /*main axis- horizontal*/
+    align-items: center; /*cross axis- vertical*/
+    background-color: #578eed;
+}

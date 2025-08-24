@@ -1,8 +1,13 @@
 .navbar{
   background-color: #578eed; /* matches the palette, not too dark */
-  padding: 12px 0;
+  padding: 10px 0px;
   border-radius: 6px;
+  display:flex;
+  align-items: center;
+
 }
+
+
 .navpages {
   list-style: none;   /* removes bullets points from the list */
   margin: 0;          /* reset default spacing around the list items*/
@@ -10,15 +15,40 @@
   
   display: flex;      /* makes list items responsive and also lines the items  horizontally because default value for flex-direction is row */
   gap: 20px;          /* space between items */
+  flex:1
 }
+
+#hambtn {
+  font-size: 18px; /* match link size */
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none; /* Hidden by default, shown on small screens */
+  
+
+}
+
+@media (max-width: 700px) {
+      #hambtn { display: inline-block; }
+      .navpages { display: none; flex-direction: column; width: 100%;  }
+      #login { display:inline-block; margin:auto;}
+      .show { display: flex; }
+      #login { margin-left: 0; } /* no right push in stacked layout */
+    }
+
 
 #homelink{
     margin-left: 20px; /* adds margin to the left of the home link to separate it from the edge of the navbar */
 }
 
 #login {
-    margin-left:auto; /* pushes the login link to the far right */
+    
+    
+    margin-left: auto; /* pushes the login link to the far right */
+    margin-right: 20px; /* adds margin to the right of the login link to separate it from the edge of the navbar */
 }
+
 /* Styles each link */
 a {
   text-decoration: none; /*removes underline from links */
@@ -35,3 +65,4 @@ a:hover {
  
 
 }
+
