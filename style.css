@@ -47,6 +47,7 @@
     
     margin-left: auto; /* pushes the login link to the far right */
     margin-right: 20px; /* adds margin to the right of the login link to separate it from the edge of the navbar */
+
 }
 
 /* Styles each link */
@@ -66,3 +67,14 @@ a:hover {
 
 }
 
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* allows main to grow and fill available space */
+}
