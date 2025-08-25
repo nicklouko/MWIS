@@ -11,7 +11,7 @@
   <main>
   <div class="registercontainer">
     <h2>Registration Form</h2>
-    <form action="/register" method="post">
+    <form action="http://localhost:3000/register" method="post">
       <label for="email">Email</label><br>
       <input type="email" id="email" name="email" placeholder="Email" required>
       <label for="username">Username</label><br>
