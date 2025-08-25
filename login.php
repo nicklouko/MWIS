@@ -9,14 +9,14 @@
 <body>
   <?php include 'navigationbar.php'; ?>
   <main>
-  <div class="login-box">
+  <div class="logincontainer">
     <h2>Login</h2>
     <form action="/login" method="post">
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="password">Password</label>
-      <input type="password" id="password" name="password" required>
+      <label for="email">Email</label><br>
+      <input type="email" id="email" name="email" placeholder="Email" required>
+      <br>
+      <label for="password">Password</label><br>
+      <input type="password" id="password" name="password" placeholder="Password" required>
 
       <button type="submit">Login</button>
     </form>

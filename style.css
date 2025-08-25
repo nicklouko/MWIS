@@ -51,7 +51,7 @@
 }
 
 /* Styles each link */
-a {
+.navlinks {
   text-decoration: none; /*removes underline from links */
   color: black;
   padding: 8px 12px 8px 12px; /* adds padding around the text */
@@ -59,12 +59,54 @@ a {
   border-radius: 4px;
 }
 
-a:hover {
+.navlinks:hover {
   color: lightskyblue; /* changes text color on hover */
   
   background-color: #222831;  /* adds background color on hover */
  
 
+}
+
+main{
+  display:flex;
+  
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+.logincontainer{
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 400px;
+}
+
+.logincontainer h2 {
+  text-align: center;
+}
+
+.logincontainer input, .logincontainer button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.logincontainer button {
+  background: #578eed;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.logincontainer button:hover {
+  background: #467acc;
 }
 
 
@@ -73,6 +115,7 @@ html, body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  
 }
 
 main {
