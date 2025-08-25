@@ -14,6 +14,8 @@
     <form action="/register" method="post">
       <label for="email">Email</label><br>
       <input type="email" id="email" name="email" placeholder="Email" required>
+      <label for="username">Username</label><br>
+      <input type="text" id="username" name="username" placeholder="Username" required>
       <br>
       <label for="password">Password</label><br>
       <input type="password" id="password" name="password" placeholder="Password" required>
