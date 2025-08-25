@@ -20,7 +20,7 @@
 
       <button type="submit">Login</button>
     </form>
-    <p class="register-link">No account? <a href="/register">Register</a></p>
+    <p class="register-link">No account? <a href="register.php">Register</a></p>
   </div>
 </main>
 <?php include 'footer.php'; ?>

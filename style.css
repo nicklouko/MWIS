@@ -76,7 +76,7 @@ main{
   
 }
 
-.logincontainer{
+.logincontainer, .registercontainer {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -84,11 +84,11 @@ main{
   max-width: 400px;
 }
 
-.logincontainer h2 {
+.logincontainer h2, .registercontainer h2 {
   text-align: center;
 }
 
-.logincontainer input, .logincontainer button {
+.logincontainer input, .logincontainer button, .registercontainer input, .registercontainer button {
   width: 100%;
   padding: 10px;
   margin: 8px 0;
@@ -97,13 +97,13 @@ main{
   box-sizing: border-box;
 }
 
-.logincontainer input:focus {
+.logincontainer input:focus, .registercontainer input:focus {
   border-color: #578eed;
   outline: none;
   box-shadow: 0 0 5px rgba(87, 142, 237, 0.5);
 }
 
-.logincontainer button {
+.logincontainer button, .registercontainer button {
   background: #f5a623;
   color: white;
   font-weight: bold;
@@ -111,7 +111,7 @@ main{
   cursor: pointer;
 }
 
-.logincontainer button:hover {
+.logincontainer button:hover, .registercontainer button:hover {
   color: lightskyblue; /* changes text color on hover */
   
   background-color: #222831;  /* adds background color on hover */
