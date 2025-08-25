@@ -97,8 +97,14 @@ main{
   box-sizing: border-box;
 }
 
+.logincontainer input:focus {
+  border-color: #578eed;
+  outline: none;
+  box-shadow: 0 0 5px rgba(87, 142, 237, 0.5);
+}
+
 .logincontainer button {
-  background: #578eed;
+  background: #f5a623;
   color: white;
   font-weight: bold;
   border: none;
@@ -106,7 +112,9 @@ main{
 }
 
 .logincontainer button:hover {
-  background: #467acc;
+  color: lightskyblue; /* changes text color on hover */
+  
+  background-color: #222831;  /* adds background color on hover */
 }
 
 
