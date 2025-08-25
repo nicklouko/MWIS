@@ -1,0 +1,23 @@
+{
+  "name": "forhta-kai-diadiktuaka-plhroforiaka-susthmata",
+  "version": "1.0.0",
+  "description": "Just practicing, to be updated.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicklouko/MWIS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicklouko/MWIS/issues"
+  },
+  "homepage": "https://github.com/nicklouko/MWIS#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
