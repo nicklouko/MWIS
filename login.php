@@ -11,7 +11,7 @@
   <main>
   <div class="logincontainer">
     <h2>Login</h2>
-    <form action="/login" method="post">
+    <form id="loginForm">
       <label for="email">Email</label><br>
       <input type="email" id="email" name="email" placeholder="Email" required>
       <br>
@@ -25,5 +25,6 @@
 </main>
 <?php include 'footer.php'; ?>
 <script src="hambmenu.js"></script>
+<script src="login.js"></script>
 </body>
 </html>

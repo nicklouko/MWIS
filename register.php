@@ -11,7 +11,7 @@
   <main>
   <div class="registercontainer">
     <h2>Registration Form</h2>
-    <form action="http://localhost:3000/register" method="post">
+    <form id="registerForm">
       <label for="email">Email</label><br>
       <input type="email" id="email" name="email" placeholder="Email" required>
       <label for="username">Username</label><br>
@@ -27,5 +27,6 @@
 </main>
 <?php include 'footer.php'; ?>
 <script src="hambmenu.js"></script>
+<Script src="register.js"></script>
 </body>
 </html>

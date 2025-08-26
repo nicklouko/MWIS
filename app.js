@@ -5,7 +5,9 @@ const port=3000;
 //middleware
 app.use(express.urlencoded({ extended: true })); // for forms
 app.use(express.json());    
-//app.use(express.static('public')); //changed form action link instead of using this, keeping it just in case
+const cors = require('cors');
+app.use(cors({ origin: 'http://localhost', credentials: yees })); //  so I can serve the frontend that uses a different port
+
 
 
 // creating MySQL connection pool
@@ -45,25 +47,23 @@ app.post('/register', async (req, res) => {
     console.error('Error registering user:', err);
     return res.status(500).send({ message: 'Error registering user' });
   }       });
-
-    /*   db.execute('INSERT INTO users (email, username, password) VALUES (?, ?, ?)', [email, username, password])
-      .then(() => console.log('User registered:', email))
-      .catch(err => {
-        console.error('Error registering user:', err);
-        return res.status(500).send({ message: 'Error registering user' });
-      });
-
-    res.status(201).send({ message: 'User registered successfully', user: { email, username } });
-});*/
-
-    
- 
+   
 
 // Login route
-app.post('/login', (req, res) => {
+app.post('/login', async (req, res) => {
+  try{
     const{ email, password} =req.body;
-    
-    res.status(200).send({ message: 'Login successful', user: { email } });
+    const [rows] = await db.execute('SELECT * FROM users WHERE email = ? AND password = ?', [email, password]);
+    if (rows.length === 0) {
+      return res.status(400).json({ message: 'Invalid email or password' });
+    }
+    else{
+      return res.status(200).json({ message: 'Login successful', user: { email } });  
+    } 
+  } catch (err) {
+    console.error('Error during login:', err);
+    return res.status(500).json({ message: 'Error during login' });
+  }
 
 });
 
